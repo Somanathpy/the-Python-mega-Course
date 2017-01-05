@@ -1,15 +1,18 @@
 #text generator
 #Authotr:- Somanath Patil
 
+#importing packages
 import string,random
 vowels = 'aeiou'
 consonants = 'bcdfghijklmnpqrstvxyz'
 letters = string.ascii_lowercase
 
+#user input
 letter_input1 = raw_input("enter a letter,for vowels:'v',for consonants:'c',for any letter:'l'")
 letter_input2 = raw_input("enter a letter,for vowels:'v',for consonants:'c',for any letter:'l'")
 letter_input3 = raw_input("enter a letter,for vowels:'v',for consonants:'c',for any letter:'l'")
 
+#function definition
 def generator():
     if letter_input1 == 'v':
         letter1 = random.choice(vowels)
@@ -39,5 +42,6 @@ def generator():
         letter3 = letter_input3
     name = letter1+letter2+letter3
     return name
+# loop 20 times to execute generate function
 for i in range(20):
     print generator()
