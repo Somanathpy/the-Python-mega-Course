@@ -8,9 +8,9 @@ consonants = 'bcdfghijklmnpqrstvxyz'
 letters = string.ascii_lowercase
 
 #user input
-letter_input1 = raw_input("enter a letter,for vowels:'v',for consonants:'c',for any letter:'l'")
-letter_input2 = raw_input("enter a letter,for vowels:'v',for consonants:'c',for any letter:'l'")
-letter_input3 = raw_input("enter a letter,for vowels:'v',for consonants:'c',for any letter:'l'")
+letter_input1 = input("enter a letter,for vowels:'v',for consonants:'c',for any letter:'l'")
+letter_input2 = input("enter a letter,for vowels:'v',for consonants:'c',for any letter:'l'")
+letter_input3 = input("enter a letter,for vowels:'v',for consonants:'c',for any letter:'l'")
 
 #function definition
 def generator():
@@ -44,4 +44,4 @@ def generator():
     return name
 # loop 20 times to execute generate function
 for i in range(20):
-    print generator()
+    print (generator())
